@@ -8,9 +8,9 @@ Static fairness metrics evaluate a model at one point in time. This project asks
 
 The project brings together three complementary lenses:
 
-- **Policy:** the same risk score can produce different distributions of social goods depending on how it is used.
-- **Environment:** repeated interventions change the population and the outcomes the system observes.
-- **Time aggregation:** long-term fairness should compare cumulative benefit with cumulative need, rather than only average step-wise gaps.
+- Policy: the same risk score can produce different distributions of social goods depending on how it is used.
+- Environment: repeated interventions change the population and the outcomes the system observes.
+- Time aggregation: long-term fairness should compare cumulative benefit with cumulative need, rather than only average step-wise gaps.
 
 The final report develops this synthesis in detail. The notebook implements a small empirical simulation inspired by the three papers (it is not an exact reproduction of any single paper).
 
