@@ -48,26 +48,6 @@ The notebook uses the 2018 ACS 1-Year California person survey through [`folktab
 
 Sex is used as the sensitive attribute in the main experiment. Equal opportunity is treated as an idealized benchmark because observed employment status is used to define need.
 
-## Selected Results
-
-The held-out test set contains 46,942 records. The baseline model reaches 0.735 accuracy and 0.705 ROC AUC. In the dynamic simulation, demographic parity produces the smallest final-round cumulative benefit-rate gaps under both targeting strategies. High-risk targeting produces higher job-finding rates among people needing support and lower post-threshold timeout rates than middle-risk targeting.
-
-| Policy | Targeting | Benefit-rate gap | Selection-rate gap | Job-finding rate among need | Post-threshold timeout rate |
-|---|---:|---:|---:|---:|---:|
-| Demographic parity | Middle risk | 0.004 | 0.006 | 0.522 | 0.019 |
-| Long-term aware | Middle risk | 0.008 | 0.006 | 0.521 | 0.019 |
-| Utility only | Middle risk | 0.010 | 0.010 | 0.522 | 0.019 |
-| Demographic parity | High risk | 0.013 | 0.006 | 0.548 | 0.010 |
-| Long-term aware | High risk | 0.016 | 0.032 | 0.549 | 0.009 |
-| Utility only | High risk | 0.019 | 0.035 | 0.549 | 0.009 |
-
-These values describe a stylized simulation, not causal estimates of real program effects. The main takeaway is that allocation rules, targeting choices, and environmental dynamics must be evaluated together (a small selection gap alone does not determine cumulative outcomes).
-
-##Sensitivity and Extensions
-Exploratory runs indicate that the magnitude of the simulated outcomes depends on program capacity, intervention effectiveness, the long-term fairness penalty, and the timeout assumption. 
-Increasing effective intervention intensity generally raised overall employment, while larger fairness penalties changed the aggressiveness and short-run volatility of the long-term-aware policy. 
-These checks were exploratory rather than a controlled robustness analysis, the headline results therefore refer only to the documented baseline configuration.
-
 ## Repository Structure
 
 ```text
